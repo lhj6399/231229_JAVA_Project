@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face{
+            font-family: hi_melody;
+            src: url(../font/Hi_Melody/HiMelody-Regular.ttf);
+        } 
+        @import url(reset.css);
+        body{
+            text-align: center;
+            font-family: hi_melody;
+        }
+        .container>.navbar{
+            width: 95%;
+            background-color: white;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px auto;
+            align-items: center;
+        }
+        .container>.navbar>h1>a{
+            color: black;
+            font-size: 30px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .container>.navbar>ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container>.navbar>ul>li{
+            list-style: none;
+            margin: 0px 10px;
+            font-size: 20px;
+        }
+        .container>.navbar>ul>li>a{
+            color: black;
+            font: 15px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .container>.navbar>ul>li>a:hover{
+            color: gray
+        }
+        .img{
+            width: 100%;
+            /* vh/vw : 모니터(브라우저 기준) 높이 */
+            height: 60vh;
+            background:url(../image/치킨메인.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .main{
+            /* background-color: aliceblue; */
+            width: 100%;
+            height: 300px;
+            margin-bottom: 30px;
+            line-height: 300px;
+        }
+        .container>.main{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: black;
+            margin-bottom: 40px;
+        }
+        .container>.main>h2{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .menu{
+            /* display: flex; */
+            width: 300px;
+            background-color: aliceblue;
+            margin: 10px 30px 50px;
+            border-radius: 10px;
+            float: left;
+            /* justify-content: space-around; */
+            transform: translate(25%);
+        }
+        .menu1{
+            margin-top: 150px;
+        }
+        .menu>div:first-child{
+            width: 300px;
+            height: 200px;
+            background-color: aliceblue;
+            background-size: 300px 200px;
+            border-radius: 10px 10px 0 0;
+        }
+        .image:hover{
+            cursor: pointer;
+            transform: scale(1.1); ;
+        }
+        .image1{
+            background-image: url(../image/후라이드.jpg);
+        }
+        .image2{
+            background-image: url(../image/양념.jpg);
+        }
+        .image3{
+            background-image: url(../image/간장.jpg);
+        }
+        .image4{
+            background-image: url(../image//마늘\ 치킨.jpg);
+        }
+        .image5{
+            background-image: url(../image/레드마블치킨.jpg);
+        }
+        .image6{
+            background-image: url(../image/청양마요치킨.jpg);
+        }
+        .image7{
+            background-image: url(../image/파닭.jpg);
+        }
+        .image8{
+            background-image: url(../image/쇼킹핫.jpg);
+        }
+        .image9{
+            background-image: url(../image/찜닭.jpg);
+        }
+        h3{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .font{
+            color: blue;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1><a href="">▦CHICKEN SHOP</a></h1>
+            <ul>
+                <li><a href="">Content</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+        <div class="img"></div>
+        <div class="main">
+            <h2>Our Menu</h2>
+        </div>
+        <div class="menu menu1">
+            <div class="image image1"></div>
+            <div>
+                <h3>후라이드 치킨</h3>
+                <p>18,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+        </div>
+        <div class="menu menu1">
+            <div class="image image2"></div>
+            <div>
+                <h3>양념 치킨</h3>
+                <p>19,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+        </div>
+        <div class="menu menu1">
+            <div class="image image3"></div>
+            <div>
+                <h3>간장 치킨</h3>
+                <p>19,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="image image4"></div>
+            <div>
+                <h3>마늘 치킨</h3>
+                <p>20,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="image image5"></div>
+            <div>
+                <h3>레드 마블 치킨</h3>
+                <p>21,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="image image6"></div>
+            <div>
+                <h3>청양 마요 치킨</h3>
+                <p>21,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="image image7"></div>
+            <div>
+                <h3>파닭</h3>
+                <p>22,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="image image8"></div>
+            <div>
+                <h3>쇼킹 핫 치킨</h3>
+                <p>23,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="image image9"></div>
+            <div>
+                <h3>찜닭</h3>
+                <p>24,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

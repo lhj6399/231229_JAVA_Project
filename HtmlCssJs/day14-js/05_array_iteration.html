@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>array.map(callback function)</li>
+    </ul>
+    
+    <script>
+        const numArr = [3,5,4,1,2,7,6,8];
+        const strArr = ['g','a','y','r','e','i']
+        console.log('--value, index, array--')
+        numArr.forEach(function(v,i,a){
+            console.log(v,i,a);
+        });
+
+        console.log("--------------------------");
+        strArr.forEach(function(v,i,a){
+            console.log(v,i,a);
+        });
+
+        console.log("--value, index--");
+        strArr.forEach(function(v,i){
+            console.log(i,v);
+        })
+
+        console.log("-- value --");
+        strArr.forEach(function(v){
+            console.log(v);
+        });
+
+        console.log("-- invoke callback function --");
+        function printNumber(v,i,s){
+            console.log(i,v,s);
+        }
+        numArr.forEach(printNumber);
+
+        console.log("--------------------------");
+        strArr.forEach(printNumber);
+
+
+        console.log("-- map() invoke callbakc function --");
+        function printNumber(v,i,s){
+            return `${i}, ${v}, ${s}`;
+        }
+
+        const newArray = strArr.map(printNumberMap);
+        console.log(newArray);
+
+        console.log("-- map() --");
+        const newStrArr = strArr.map(function(v,i){
+            return `${i}, ${v}`;
+        });
+        console(newStrArr);
+
+        const newStrArr2 = strArr.forEach(function(v,i){
+            return `${i}, ${v}`;
+        });
+        console.log(newStrArr2); // underined
+
+        console.log("-- filter() --");
+        const newNumArr = numArr.filter(function(v,i){
+            return v > 5;
+        });
+        console.log(newNumArr);
+    </script>
+</body>
+</html>

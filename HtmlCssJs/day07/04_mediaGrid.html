@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        가장 좁을 때
+        min-width : 800px
+        min-width : 1200px
+     -->
+     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100%;
+        }
+        .header{
+            height: 60px;
+            background-color: aliceblue;
+        }
+        .main-img{
+            height: 300px;
+            background-color: antiquewhite;
+        }
+        .subject{
+            height: 350px;
+            background-color: lightcoral;
+        }
+        .content{
+            height: 500px;
+            background-color: azure;
+        }
+        .sub{
+            height: 200px;
+            background-color:bisque;
+        }
+        .footer{
+            height: 200px;
+            background-color:lightblue;
+        }
+        /* 뷰포트의 너비가 800이상인 경우 */
+        @media screen and (min-width:800px) {
+            .header{
+                height: 60px;
+            }
+            .main-img{
+                height: 500px;
+            }
+            .subject{
+                height: 350px;
+            }
+            .content{
+                width: 50%;
+                float: left;
+                height: 400px;
+            }
+            .sub{
+                width: 50%;
+                float: right;
+                height: 400px;
+            }
+            .footer{
+                height: 200px;
+                clear: both;
+            }
+        }
+        /* 뷰포트의 너비가 1200이상인 경우 */
+        @media screen and (min-width:1200px){
+            .subject{
+                width: 50%;
+                float: left;
+                height: 600px;
+            }
+            .content{
+                width: 50%;
+                float: right;
+                height: 300px;
+            }
+            .sub{
+                width: 50%;
+                float: left;
+                height: 300px;
+            }
+        }
+     </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main-img"></div>
+    <div class="subject"></div>
+    <div class="content"></div>
+    <div class="sub"></div>
+    <div class="footer"></div>
+</body>
+</html>

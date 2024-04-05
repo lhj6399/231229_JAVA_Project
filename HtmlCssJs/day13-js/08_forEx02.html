@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        향상된 for문
+    </h1>
+    <ul>
+        <li>
+            for of : 배열 안의 내용을 탐색할 때 사용 []
+            for(let value of Array){
+            code;
+            }
+        </li>
+        <li>
+            for in : 객체 안의 내용을 탐색할 때 사용 { }
+            for(let value in Object){
+            <!-- value = key -->
+            code;
+            }
+        </li>
+        <h3>
+            약수 출력하기 (1~100까지 입력한 숫자의 약수를 출력)
+        </h3>
+        <input type="text" id="num">
+        <button onclick="eventClick()">약수 출력</button>
+        <h3 id="result">
+            약수값 출력 / 개수
+        </h3>
+    </ul>
+
+    <script>
+        let result = document.getElementById('result');
+
+        let sum=0;
+        
+        function eventClick() {
+
+            let num = document.getElementById('num').value;
+
+            for (let i=1; i<=num; i++) {
+
+                if (num%i == 0) {
+                    result.innerText += `${i},`;
+                    sum++;
+                }
+
+            }
+            let sum2 = Number(sum);
+            console.log(sum);
+            result.innerText += `총 ${sum2}개`;
+
+        }
+    </script>
+</body>
+
+</html>

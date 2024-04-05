@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>성적 확인</legend>
+            이름: <input type="text" id="name"> <br>
+            국어: <input type="text" id="kor"> <br>
+            영어: <input type="text" id="eng"> <br>
+            수학: <input type="text" id="math"> <br>
+            <button type="button" onclick="clickEvent()">성적 계산</button>
+        </fieldset>
+    </form>
+    <h3 id="result"></h3>
+    <!-- 이름, 합계, 평균, 합격여부 (평균 60이상이면 pass / fail) -->
+    <!-- 입력한 성적의 점수 값이 0 ~ 100 사이의 값이 아니면 alert창 띄워 안내 -->
+
+    <script>
+        function clickEvent(){
+            let result = document.getElementById('result');
+
+            let name = document.getElementById('name').value;
+            let kor = document.getElementById('kor').value;
+            let eng = document.getElementById('eng').value;
+            let math = document.getElementById('math').value;
+
+            let sum = Number(kor) + Number(eng) + Number(math);
+            let avg = Math.round(sum / 3);
+
+            result.innerText = `이름 : ${name}, `;
+            result.innerText += `합계 : ${sum}, `;
+            result.innerText += `평균 : ${avg},`;
+
+            if (avg>=60) {
+                result.innerText += `합격여부 : 합격`;
+            } else {
+                result.innerText += `합격여부 : 불합격`;
+            }
+
+            if ((Number(kor)<0 || Number(eng)<0 || Number(math)<0)  || (Number(kor)>100 || Number(eng)>100 || Number(math)>100)) { 
+                alert("0 ~ 100 사이의 점수를 입력해주세요.");
+            }
+
+        }
+    </script>
+</body>
+</html>

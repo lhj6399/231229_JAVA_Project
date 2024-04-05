@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        성적확인
+        이름: input
+        국어: input
+        영어: input
+        수학: input
+        성적 계산 버튼
+        ----------------------
+        성적확인
+        이름: 홍길동
+        국어: 80
+        영어: 90
+        수학: 80
+        합계: XX
+        평균: XX 표시
+     -->
+    <form action="">
+        <fieldset>
+            <legend>성적확인</legend>
+            이름: <input type="text" id="userName"> <br>
+            국어: <input type="text" id="korean"> <br>
+            영어: <input type="text" id="english"> <br>
+            수학: <input type="text" id="math"> <br>
+            <button type="button" onclick="clickEventInput()">성적 계산 버튼</button>
+        </fieldset>
+    </form>
+    <h3 id="info"></h3>
+    <ol id="ol">
+    </ol>
+
+    <script>
+        const info = document.getElementById('info');
+        // ol태그 객체를 가져오기.
+        const ol = document.getElementById('ol');
+
+        function clickEventInput() {
+        let userName = document.getElementById('userName');
+        let korean = document.getElementById('korean');
+        let english = document.getElementById('english');
+        let math = document.getElementById('math');
+
+            ol.innerHTML = `<li>이름 : ${userName.value}</li>`;
+            ol.innerHTML += `<li>국어 : ${korean.value}</li>`;
+            ol.innerHTML += `<li>영어 : ${english.value}</li>`;
+            ol.innerHTML += `<li>수학 : ${math.value}</li>`;
+
+        let koreanVal = parseInt(korean.value);
+        let englishVal = parseInt(english.value);
+        let mathVal = parseInt(math.value);
+        let sum = (koreanVal+englishVal+mathVal);
+        let avg = (sum/3);
+            
+            ol.innerHTML += `<li>합계 : ${sum}점</li>`;
+            ol.innerHTML += `<li>평균 : ${avg}점</li>`;
+        }
+    </script>
+</body>
+
+</html>

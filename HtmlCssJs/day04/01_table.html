@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            /* border: 1px solid black; */
+            /* 테이블의 선을 한줄로 만들기 */
+            border-collapse: collapse;
+
+            /* width: 500px; */
+            /* 전체 창 크기의 80%만 설정 */
+            width: 80%;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        thead>tr{
+            background-color:lavenderblush;
+        }
+        /* tbody의 짝수요소만 배경색을 변경 */
+        tbody>tr:nth-child(2n){
+            background-color: aliceblue;
+        }
+        /* tbody의 tr태그에 마우스를 올리면 색 변경 */
+        tbody>tr:hover{
+            background-color: antiquewhite;
+        }
+        /* 테이블 전체 100% 중 20% */
+        .w20{
+            width: 20%;
+        }
+        /* 테이블 전체 100% 중 40% & 40% */
+        .w40{
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>성적표</caption>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>성적</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="w20">1</td>
+                <td class="w40">홍길동</td>
+                <td class="w40">85</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>이순신</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>김영이</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>박철수</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>홍길순</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">합계</td>
+                <td>???</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

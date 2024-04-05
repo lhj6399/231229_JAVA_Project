@@ -1,0 +1,33 @@
+body{
+    /* body 전체의 inline tag들에게 모두 가운데 정렬 */
+    text-align: center;
+}
+
+h1{
+    border: 5px solid black;
+    width: 300px;
+    margin: 10px auto 30px;
+    line-height: 50px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul>li{
+    display: inline;
+    margin: 10px 10px;
+}
+
+ul>li>a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img{
+    width: 50%;
+    height: 400px;
+}
+

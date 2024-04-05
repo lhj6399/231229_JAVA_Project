@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Single+Day&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color:aqua;
+      
+        font-family: "Nanum Pen Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+        text-align: center;
+    }
+
+    .menu1{
+        background-color: white;
+        width: 300px;
+        height: 430px;
+        border-radius: 20px;
+        margin: 50px;
+        margin: 30px auto;
+    }
+    
+    .menu2{
+        background-color: white;
+        width: 300px;
+        height: 430px;
+        border-radius: 20px;
+        margin: 50px;
+        margin: 30px auto;
+    }
+
+    .menu3{
+        background-color: white;
+        width: 300px;
+        height: 430px;
+        border-radius: 20px;
+        margin: 30px auto;
+    }
+
+    .menu4{
+        background-color: white;
+        width: 300px;
+        height: 430px;
+        border-radius: 20px;
+        margin: 30px auto;
+    }
+
+    .menu5{
+        background-color: white;
+        width: 300px;
+        height: 430px;
+        border-radius: 20px;
+        margin: 30px auto;
+    }
+
+    .fixed{
+            position: fixed;
+
+            bottom: 30px;
+            right: 10px;
+
+            background-color: white;
+            border-radius: 10px 10px 0px 0px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+        
+    .fixed>a{
+            color: black;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+    .fixed2{
+            position: fixed;
+
+            bottom: 0px;
+            right: 10px;
+
+            background-color: white;
+            border-radius: 0px 0px 10px 10px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+
+    .fixed2>a{
+            color: black;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        @keyframes scalefont {
+            0%{ 
+                font-size: 10px;
+                color: black;
+            }
+            50%{
+                font-size: 20px;
+                color: black;
+            }
+            100%{
+                font-size: 10px;
+                color: black;
+            }
+        }
+        h2{
+            animation-name: scalefont;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .font{
+            color: blue;
+        }
+</style>
+</head>
+<body>
+    <!-- 가로 300px -->
+    <header>
+        <img src="../image/배민.jpg" alt="배민 이미지" width="150" height="150">
+        <h1>배달의 민족</h1>
+        <h2>넌 배달할 때가 제일 멋있어</h2>
+    </header>
+    <!-- 메뉴 -->
+    <div class="menu">
+        <div class="menu1">
+        <img style="border-radius: 20px 20px 0px 0px;"
+        src="../image/후라이드.jpg" width="300" height="250">
+        <div>
+            <h3>후라이드 치킨</h3>
+            <p>특별한 염지방법으로 부드러운 속살과 <br>
+                전용 파우더로 바삭함은 두 배!!</p>
+            <p><del>20,000원</del> 15,000원</p>
+            <p class="font">바로 결제</p>
+        </div>
+        </div>
+        <div class="menu2">
+            <img style="border-radius: 20px 20px 0px 0px;"
+            src="../image/양념.jpg" width="300" height="250">
+            <div>
+                <h3>양념 치킨</h3>
+                <p>4가지 신선한 야채와 15가지 특별한 재료가 만나 <br> 
+                    시그니처 양념소스로 탄생!</p>
+                <p><del>22,000원</del> 17,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+            </div>
+         <div class="menu3">
+            <img style="border-radius: 20px 20px 0px 0px;"
+            src="../image/파닭.jpg" width="300" height="250">
+            <div>
+                <h3>파닭</h3>
+                <p>매운맛을 살짝 뺀 신선한 파채와 <br>
+                    오리엔탈소스의 조합으로 부담 없이 즐기세요!</p>
+                <p><del>23,000원</del> 18,000원</p>
+                <p class="font">바로 결제</p>
+            </div>
+            </div>
+            <div class="menu4">
+                <img style="border-radius: 20px 20px 0px 0px;"
+                src="../image/간장.jpg" width="300" height="250">
+                <div>
+                    <h3>간장 치킨</h3>
+                    <p>짭쪼름한 간장으로 <br>
+                        계속 먹어도 질리지 않는 마성의 치킨!</p>
+                    <p><del>22,000원</del> 17,000원</p>
+                    <p class="font">바로 결제</p>
+                </div>
+                </div>
+                <div class="menu5">
+                    <img style="border-radius: 20px 20px 0px 0px;"
+                    src="../image/마늘 치킨.jpg" width="300" height="250">
+                    <div>
+                        <h3>마늘 치킨</h3>
+                        <p>생생한 마늘의 알싸함과 <br> 
+                        아삭함이 후라이드의 바삭함을 만나리얼 마늘치킨으로 탄생!!!</p>
+                        <p><del>23,000원</del> 18,000원</p>
+                        <p class="font">바로 결제</p>
+                    </div>
+                    </div>                         
+    </div>
+    <div class="fixed">
+        <a href="#top">위로</a>
+    </div>
+    <div class="fixed2">
+        <a href="#bottom">아래로</a>
+    </div>
+    <div id="bottom">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        상하좌우 값이 있을 경우
+        margin: 10px; => 상하좌우 전체 여백
+        margin: 10px 20px; => 상하 좌우 여백
+        margin: 10px 20px 30px; => 상 좌우 하 여백
+        margin: 10px 20px 30px 40px => 상 우 하 좌 여백 (시계방향)
+     -->
+    <style>
+        .box{
+            background-color: aliceblue;
+            border: 3px solid aliceblue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+
+            /* 옆으로 바꾸기 */
+            float: left;
+            margin-left: 10px;
+
+            text-align: center;
+            color: blue;
+            font-weight: 700;
+
+            position: relative;
+            
+        }
+
+        .box:hover{
+            top: 5px;
+            left: 5px;
+            color: fuchsia;
+            background-color: lavenderblush;
+            
+            /* transform: translate(10px, 10px); */
+        }
+        
+     </style>
+</head>
+<body>
+        <div class="box">T</div>
+        <div class="box">H</div>
+        <div class="box">A</div>
+        <div class="box">N</div>
+        <div class="box">K</div>
+        <div class="box">S</div>
+</body>
+</html>

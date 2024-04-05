@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table td{
+            width: 100px;
+            height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>구구단 2~9단까지 출력</h1>
+    <button type="button" onclick="gugu()">구구단 출력</button>
+    <div id="gugu">
+        <!-- 
+            테이블 추가
+            2*1=2   3*1=3   4*1=4 ... 9*1=9
+            ...
+            incre = 1일 경우 tr 하나 생성
+            for dan 2~9 증가 반복 td생성
+            incre = 2일 경우 tr 하나 생성...
+         -->
+    </div>
+
+    <script>
+        function gugu(){
+        let gugu = document.getElementById('gugu');
+
+        let incre = 1; // 증가값
+        let str = `<table>`;
+            
+            while(incre<10){
+            let dan = 2; // 단
+            str += `<tr>`
+                while(dan<10){
+                    str +=`<td>${dan}*${incre}=${dan * incre}</td>`;
+                    dan++;
+                }
+                incre++;
+                str +=`</tr>`
+        }
+        str +=`</table>`;
+        gugu.innerHTML = str;
+        }
+    </script>
+</body>
+</html>

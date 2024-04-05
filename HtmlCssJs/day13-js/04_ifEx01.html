@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>오늘은??</h1>
+    <button type="button" id="btn">Today</button>
+    <h3 id="result">
+        <!-- 오늘 날짜와 요일 출력 -->
+    </h3>
+
+    <script>
+        document.getElementById("btn").addEventListener('click', () => {
+            const result = document.getElementById("result");
+
+            let today = new Date();
+            let today2 = today.toLocaleDateString(); // 2024. 3. 19.
+
+            console.log(today2);
+            console.log(today.getDay());
+
+            switch (today.getDay()){
+                case 0: console.log ("(일)"); break;
+                case 1: console.log ("(월)"); break;
+                case 2: console.log ("(화)"); break;
+                case 3: console.log ("(수)"); break;
+                case 4: console.log ("(목)"); break;
+                case 5: console.log ("(금)"); break;
+                case 6: console.log ("(토)"); break;
+            }
+
+            result.innerText = `${today2}`;
+
+            switch (today.getDay()){
+                case 0: result.innerText += ("(일)"); break;
+                case 1: result.innerText += ("(월)"); break;
+                case 2: result.innerText += ("(화)"); break;
+                case 3: result.innerText += ("(수)"); break;
+                case 4: result.innerText += ("(목)"); break;
+                case 5: result.innerText += ("(금)"); break;
+                case 6: result.innerText += ("(토)"); break;
+            }
+
+
+        });
+    </script>
+</body>
+</html>

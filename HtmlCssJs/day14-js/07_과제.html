@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 200px;
+        }
+
+        body>button {
+            font-size: 30px;
+            height: 300px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" id="btn1" onclick="rsp(1)"><img src="../image/가위.png">
+        <p>가위(1)</p>
+    </button>
+    <button type="button" id="btn2" onclick="rsp(2)"><img src="../image/바위.png">
+        <p>바위(2)</p>
+    </button>
+    <button type="button" id="btn3" onclick="rsp(3)"><img src="../image/보.png">
+        <p>보(3)</p>
+    </button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        let win = 0; // 승
+        let draw = 0; // 무
+        let lose = 0; // 패
+        let sum = 0;
+
+        function ran(){
+            return Math.floor(Math.random() * 3) + 1;
+        }
+
+        function rsp(player){
+            let com = ran();
+            
+            if(player==1 && com==1 || player==2 && com==2 || player==3 && com==3){
+                draw++;
+            }
+            else if (player==1 && com==3 || player==2 && com==1 || player==3 && com==2){
+                win++;
+            }
+            else if (player==1 && com==2 || player==2 && com==3 || player==3 && com==1){
+                lose++;
+            }
+
+            sum++;
+        
+            console.log(`${player}`);
+            console.log(`${com}`);
+            console.log(`승: ${win}, 무: ${draw}, 패: ${lose}`);
+
+            document.getElementById('result').innerHTML =
+            `<br>현재전적
+            <br>승: ${win}, 무: ${draw}, 패: ${lose}
+            <br>승률: ${((win/(sum))*100).toFixed(2)}%`;
+
+        }
+
+        // document.getElementById('btn1').addEventListener('click', () => {
+
+        //     let player = 1; // 가위
+
+        //     let com = Math.floor(Math.random() * 3) + 1;
+
+        //     switch (com) {
+        //         case 1:
+        //             // 가위
+        //             draw++;
+        //             break;
+        //         case 2:
+        //             // 바위
+        //             lose++;
+        //             break;
+        //         case 3:
+        //             // 보
+        //             win++;
+        //             break;
+        //         default:
+        //             break;
+        //     }
+
+        //     console.log(`${com}`);
+        //     console.log(`승: ${win}, 무: ${draw}, 패: ${lose}`)
+
+        //     if (com == 1) {
+        //         document.getElementById('result').innerHTML =
+        //             `player: 가위 / com: 가위 => 비겼습니다.`
+        //     }
+        //     if (com == 2) {
+        //         document.getElementById('result').innerHTML =
+        //             `player: 가위 / com: 바위 => player가 졌습니다.`
+        //     }
+        //     if (com == 3) {
+        //         document.getElementById('result').innerHTML =
+        //             `player: 가위 / com: 보 => player가 이겼습니다.`
+        //     }
+
+        //     sum++;
+
+        //     document.getElementById('result').innerHTML +=
+        //     `<br>현재전적
+        //     <br>승: ${win}, 무: ${draw}, 패: ${lose}
+        //     <br>승률: ${((win/(sum))*100).toFixed(2)}%`;
+
+        // });
+
+        // document.getElementById('btn2').addEventListener('click', () => {
+
+        //     let player = 2; // 바위
+        //     let com = Math.floor(Math.random() * 3) + 1;
+
+        //     switch (com) {
+        //         case 1:
+        //             // 가위
+        //             win++;
+        //             break;
+        //         case 2:
+        //             // 바위
+        //             draw++;
+        //             break;
+        //         case 3:
+        //             // 보
+        //             lose++;
+        //             break;
+        //         default:
+        //             break;
+        //     }
+
+        //     console.log(`${com}`);
+        //     console.log(`승: ${win}, 무: ${draw}, 패: ${lose}`)
+
+        //     if (com == 1) {
+        //         document.getElementById('result').innerHTML =
+        //             `player: 바위 / com: 가위 => player가 이겼습니다.`
+        //     }
+        //     if (com == 2) {
+        //         document.getElementById('result').innerHTML =
+        //             `player: 바위 / com: 바위 => 비겼습니다.`
+        //     }
+        //     if (com == 3) {
+        //         document.getElementById('result').innerHTML =
+        //             `player: 바위 / com: 보 => player가 졌습니다.`
+        //     }
+
+        //     sum++;
+
+        //     document.getElementById('result').innerHTML +=
+        //     `<br>현재전적
+        //     <br>승: ${win}, 무: ${draw}, 패: ${lose}
+        //     <br>승률: ${((win/(sum))*100).toFixed(2)}%`;
+
+        // });
+
+        // document.getElementById('btn3').addEventListener('click', () => {
+
+        //     let player = 3; // 보
+        //     let com = Math.floor(Math.random() * 3) + 1;
+
+        //     switch (com) {
+        //         case 1:
+        //             // 가위
+        //             lose++;
+        //             break;
+        //         case 2:
+        //             // 바위
+        //             win++;
+        //             break;
+        //         case 3:
+        //             // 보
+        //             draw++;
+        //             break;
+        //         default:
+        //             break;
+        //     }
+
+        //     console.log(`${com}`);
+        //     console.log(`승: ${win}, 무: ${draw}, 패: ${lose}`)
+
+        //     if (com == 1) {
+        //         document.getElementById('result').innerHTML =
+        //             `player: 보 / com: 가위 => player가 졌습니다.`
+        //     }
+        //     if (com == 2) {
+        //         document.getElementById('result').innerHTML =
+        //             `player: 보 / com: 바위 => player가 이겼습니다.`
+        //     }
+        //     if (com == 3) {
+        //         document.getElementById('result').innerHTML =
+        //             `player: 보 / com: 보 => 비겼습니다.`
+        //     }
+
+        //     sum++;
+
+        //     document.getElementById('result').innerHTML +=
+        //     `<br>현재전적
+        //     <br>승: ${win}, 무: ${draw}, 패: ${lose}
+        //     <br>승률: ${((win/(sum))*100).toFixed(2)}%`;
+
+
+        // });
+    </script>
+</body>
+
+</html>

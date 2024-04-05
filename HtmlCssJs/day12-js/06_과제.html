@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        이름 : <input type="text" id="name"> <br>
+        주민번호 : <input type="text" id="num"> <br>
+        <button type="button" onclick="check()">확인</button>
+    </form>
+    <h3 id="info"></h3>
+
+    <script>
+        let info = document.getElementById("info");
+
+        function check(){
+            let name = document.getElementById('name').value;
+            let num = document.getElementById('num').value;
+            let birth = num.slice(0,num.indexOf("-"));
+            let age = num.slice(0,2);
+            let countAge = (24-age);
+            let gender = num.charAt(num.indexOf("-")+1); // 7번째
+
+            info.innerText = `이름 : ${name}, `;
+            info.innerText += ` 생년월일: ${birth}, `;
+            info.innerText += ` 나이 : ${countAge}, `;
+            info.innerText += ` 성별 : ${((gender==="1" || gender==="3")?"남":"여")}`;
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font link -->
+    <!-- 해당하는 css font-family 삽입 -->
+    <style>
+        @font-face{
+            font-family: hi_melody;
+            src: url(../font/Hi_Melody/HiMelody-Regular.ttf);
+        }
+        @font-face{
+            font-family: nanum_pen_script;
+            src: url(../font/Nanum_Pen_Script/NanumPenScript-Regular.ttf);
+        }
+        body{
+            background-color: aqua;
+        }
+        header{
+            font-family: hi_melody; 
+            text-align: center;
+            margin: 20px;
+        }
+        div{
+            text-align: center;
+        }
+        header>h2{
+            font-size: 30px;
+        }
+        .menu{
+            width: 300px;
+            background-color: aliceblue;
+            margin: auto;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        .menu>div:first-child{
+            width: 300px;
+            height: 200px;
+            background-color: aliceblue;
+            background-size: 300px 200px;
+            border-radius: 10px 10px 0 0;
+        }
+        .image1{
+            background-image: url(../image/후라이드.jpg);
+        }
+        .image2{
+            background-image: url(../image/양념.jpg);
+        }
+        .image3{
+            background-image: url(../image/파닭.jpg);
+        }
+        .image4{
+            background-image: url(../image/간장.jpg);
+        }
+        .image5{
+            background-image: url(../image/마늘\ 치킨.jpg);
+        }
+        .menu>div:last-child{
+            font-family: nanum_pen_script;
+        }
+        .menu>div>h3{
+            font-size: 20px;
+        }
+        .menu>div>p:nth-of-type(1){
+            font-size: 20px;
+        }
+        .menu>div>p:last-child{
+            padding-bottom: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>배달의 민족</h1>
+        <h2>넌 배달할 때가 제일 멋있어</h2>
+    </header>
+    <!-- 메뉴 -->
+    <div class="menu">
+        <div class="image1"></div>
+        <div>
+            <h3>후라이드 치킨</h3>
+            <p>특별한 염지방법으로 부드러운 속살과 <br>
+                전용 파우더로 바삭함은 두 배!!</p>
+            <p><del>20,000원</del> 15,000원</p>
+            <p class="font">바로 결제</p>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="image2"></div>
+        <div>
+            <h3>양념 치킨</h3>
+            <p>특별한 염지방법으로 부드러운 속살과 <br>
+                전용 파우더로 바삭함은 두 배!!</p>
+            <p><del>20,000원</del> 15,000원</p>
+            <p class="font">바로 결제</p>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="image3"></div>
+        <div>
+            <h3>파닭</h3>
+            <p>특별한 염지방법으로 부드러운 속살과 <br>
+                전용 파우더로 바삭함은 두 배!!</p>
+            <p><del>20,000원</del> 15,000원</p>
+            <p class="font">바로 결제</p>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="image4"></div>
+        <div>
+            <h3>간장 치킨</h3>
+            <p>특별한 염지방법으로 부드러운 속살과 <br>
+                전용 파우더로 바삭함은 두 배!!</p>
+            <p><del>20,000원</del> 15,000원</p>
+            <p class="font">바로 결제</p>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="image5"></div>
+        <div>
+            <h3>마늘 치킨</h3>
+            <p>특별한 염지방법으로 부드러운 속살과 <br>
+                전용 파우더로 바삭함은 두 배!!</p>
+            <p><del>20,000원</del> 15,000원</p>
+            <p class="font">바로 결제</p>
+        </div>
+    </div>
+    
+</body>
+</html>

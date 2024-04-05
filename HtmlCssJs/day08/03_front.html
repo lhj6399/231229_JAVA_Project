@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @font-face{
+            font-family: hi_melody;
+            src: url(../font/Hi_Melody/HiMelody-Regular.ttf);
+        }
+        body{
+            font-family: hi_melody;
+            background-image: url(../image/Paris.jpg);
+            background-size: 100% 180%;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+            margin-top: -30px;
+            margin-left: 50px;
+            margin-right: 50px;
+            align-items: center;
+            color: white;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        li{
+            display: inline;
+            list-style-type: none;
+            margin-left: 10px;
+        }
+        .제목{
+            display: flex;
+            font-size: 50px;
+            color: white;
+            font-weight: 700;
+            margin-top: 150px;
+            justify-content: space-around;
+        }
+        .부제목{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            color: white;
+            font-weight: 700;
+            margin-top: 20px;
+            margin: auto; 
+            border: 2px solid green;
+            border-radius: 5px;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body class="image">
+    <div class="container">
+        <span>DESIGN</span>
+        <ul>
+            <li>HOME</li>
+            <li>LOGIN</li>
+            <li>SIGNUP</li>
+            <li>BOARD</li>
+        </ul>
+    </div>
+    <div class="제목">Welcome to Front-End World</div>
+    <div class="부제목">Learn More</div>
+</body>
+</html>

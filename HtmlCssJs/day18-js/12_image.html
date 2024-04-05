@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../travel/style.css">
+
+</head>
+<body>
+
+    <h1>Travel</h1>
+    <ul>
+        <li><a onclick="Home()">Home</a></li>
+        <li><a onclick="Seoul()">Seoul</a></li>
+        <li><a onclick="Tokyo()">Tokyo</a></li>
+        <li><a onclick="Paris()">Paris</a></li>
+    </ul>
+
+    <img src="../image/home.jpg" id="img">
+    
+    <script>
+        let img = document.getElementById('img');
+
+        function Home(){
+            img.src="../image/home.jpg";
+        }
+
+        function Seoul(){
+            img.src="../image/Seoul.jpg";
+        }
+
+        function Tokyo(){
+            img.src="../image/Tokyo.jpg";
+        }
+
+        function Paris(){
+            img.src="../image/Paris.jpg";
+        }
+    </script>
+</body>
+</html>

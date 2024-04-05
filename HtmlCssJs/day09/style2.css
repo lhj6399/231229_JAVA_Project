@@ -1,0 +1,449 @@
+@font-face {
+    font-family: hi_melody;
+    src: url(../font/Hi_Melody/HiMelody-Regular.ttf);
+}
+
+body {
+    font: hi_melody;
+    color: black;
+}
+
+.wrap {
+    width: 100%;
+    min-width: 1200px;
+}
+
+.inner {
+    width: 1170px;
+    margin: auto;
+    box-sizing: border-box;
+    /* background-color: antiquewhite; */
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+header>.inner {
+    height: 115px;
+    /* background-color: aliceblue; */
+    position: relative;
+}
+
+header>.inner>h1 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+header>.inner>.top-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header>.inner>.top-menu>li {
+    padding: 10px 20px;
+    position: relative;
+}
+
+header>.inner>.nav>ul {
+    display: flex;
+    justify-content: center;
+    height: 79px;
+}
+
+header>.inner>.nav>ul>li {
+    margin: 0 40px;
+}
+
+header>.inner>.nav>ul>li>a {
+    font-size: large;
+    font-weight: 700;
+    line-height: 79px;
+}
+
+header>.inner>.nav>ul>li>a:hover {
+    color: green;
+}
+
+/* 슬라이드 그림 */
+section {
+    width: 100%;
+    height: 725px;
+    /* background-color: blueviolet; */
+    background-image: url(img/202005111050316900.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section>ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bold {
+    font-weight: 700;
+}
+
+.top-menu {
+    position: relative;
+}
+
+.before::before {
+    content: " ";
+    background: gray;
+    width: 1px;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -6.5px;
+}
+
+/* main */
+main>.con-box {
+    width: 100%;
+}
+
+main>.con-box>.inner {
+    padding: 120px 0px;
+}
+
+main>.con1 {
+    background-color: white;
+}
+
+main>.con1>.inner {
+    height: 100px;
+    /* background-color: brown; */
+    padding: 10px;
+}
+
+main>.con1>.inner>a {
+    text-align: center;
+    position: relative;
+}
+
+main>.con1>.inner>a>img {
+    position: absolute;
+    left: 230px;
+    top: 25px;
+}
+
+main>.con1>.inner>a>.time {
+    display: flex;
+    justify-content: center;
+    line-height: 82px;
+}
+
+main>.con1>.inner>a>.time>.ti {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 20px;
+    position: relative;
+}
+
+main>.con1>.inner>a>.time>p {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+main>.con1>.inner>a>.time>.ti>p {
+    padding-left: 10px;
+}
+
+/* main-con2 */
+main>.con2 {
+    /* background-color: chocolate; */
+    background-image: url(img/mainCon1_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main>.con2>.inner {
+    height: 890px;
+    /* background-color: coral; */
+    text-align: center;
+}
+
+main>.con2>.inner>h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+main>.con2>.inner>h3 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+main>.con2>.inner>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+main>.con2>.inner>ul>li .img {
+    width: 574px;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+}
+
+main>.con2>.inner>ul>li .img1 {
+    background-image: url(img/mainCon1_img1.jpg);
+}
+
+main>.con2>.inner>ul>li .img2 {
+    background-image: url(img/mainCon1_img2.jpg);
+}
+
+main>.con2>.inner>ul>li {
+    border: 3px solid rgba(255, 255, 255, 0);
+}
+
+main>.con2>.inner>ul>li:hover {
+    border: 3px solid white;
+}
+
+main>.con2>.inner>ul>li p {
+    height: 82px;
+    line-height: 82px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+/* main-con3 */
+main>.con3 {
+    /* background-color: cornflowerblue; */
+    background-image: url(img/mainCon2_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+main>.con3>.inner {
+    height: 715px;
+    /* background-color: cornsilk; */
+    text-align: center;
+}
+
+main>.con3>.inner>h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+main>.con3>.inner>p {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+main>.con3>.inner>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+main>.con3>.inner>ul .img {
+    width: 375px;
+    height: 246px;
+}
+
+main>.con3>.inner>ul .txtArea {
+    width: 375px;
+    height: 77px;
+}
+
+main>.con3>.inner>ul .txtArea p {
+    line-height: 77px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+}
+
+main>.con3>.inner>ul>li:hover {
+    box-shadow: 10px 10px 20px gray;
+}
+
+main>.con3>.inner>ul>li:hover .txtArea p {
+    background-color: rgb(0, 69, 0);
+    color: white;
+}
+
+/* main-con4 */
+main>.con4 {
+    background-color: white;
+}
+
+main>.con4>.inner {
+    height: 800px;
+    /* background-color: coral; */
+}
+
+main>.con4>.inner>.news>.left {
+    float: left;
+    width: 574px;
+    /* margin-left: 22px; */
+    /* background-color: aliceblue; */
+}
+
+main>.con4>.inner>.news>.right {
+    float: right;
+    width: 574px;
+    margin-left: 22px;
+    /* background-color: aliceblue; */
+}
+
+main>.con4>.inner>.news>.right>.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+main>.con4>.inner>.news>.right>.top .r1 {
+    background-image: url(img/mainCon3_util1_img1.png);
+    background-size: auto;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    width: 276px;
+    height: 188px;
+    padding: 128px 40px 40px 40px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+main>.con4>.inner>.news>.right>.top .r2 {
+    background-image: url(img/mainCon3_util1_img2.png);
+    background-size: auto;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    width: 276px;
+    height: 188px;
+    padding: 128px 40px 40px 40px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+main>.con4>.inner>.news>.right>.bt {
+    background-image: url(img/mainCon3_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 574px;
+    height: 192px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: 22px;
+}
+
+main>.con4>.inner>.news>.right>.bt p {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+}
+
+main>.con4>.inner>.news>.right>.bt .more {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+main>.con4>.inner>.news>.right>.bt .more a {
+    color: white;
+}
+
+main>.con4>.inner>.news>.right>.bt .more a::after {
+    content: url(img/mainCon3_banner_icon.png);
+    margin-left: 10px;
+}
+
+main{
+    position: relative;
+}
+
+main>.top{
+    background-image: url(img/top_btn.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: -10px;
+    right: 30px;
+}
+
+/* footer */
+footer {
+    /* background-color: red; */
+    border-top: 1px solid gray;
+}
+
+footer>.inner {
+    /* background-color: aquamarine; */
+    height: 320px;
+    padding: 50px 0;
+}
+
+footer>.inner>ul{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid gray;
+    
+}
+
+footer>.inner>ul>li{
+    padding: 10px 20px 30px;
+}
+
+.red{
+    color: red;
+}
+
+footer>.inner>.footerBt{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>.inner>.footerBt .t{
+    margin: 10px 0;
+}
+
+footer>.inner>.footerBt .t>span{
+    padding: 10px 20px;
+    position: relative;
+    /* font-size: 15px; */
+}
+
+footer>.inner>.footerBt .c{
+    margin: 30px 10px;
+    padding-left: 10px;
+    font-size: small;
+}
+
+footer>.inner>.footerBt>.right>select{
+    width: 210px;
+    height: 45px;
+    padding-left: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    appearance: none;
+    background-image: url(img/sel_icon.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}

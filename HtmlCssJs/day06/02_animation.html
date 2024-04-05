@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        애니메이션 (animation)
+        1. 애니메이션 등록 (@keyframe)
+            - 시간비율 0 ~ 100%, 0% = from / 100% = to
+        
+        @keyframes 애니메이션명{
+            시간비율{
+                스타일;
+            }
+            시간비율{
+                스타일;
+            }
+        }
+
+        2. 애니메이션 적용
+            - animation-name : 동작할 애니메이션 이름
+            - animation-duration : 동작 시간
+            - animation-iteration-count : 동작 횟수 or infinite(무한)
+     -->
+     <style>
+        @keyframes scalefont {
+            0%{ 
+                font-size: 20px;
+                color: black;
+            }
+            50%{
+                font-size: 50px;
+                color: blue;
+            }
+            100%{
+                font-size: 20px;
+                color: black;
+            }
+        }
+        .ani{
+            font-size: 20px;
+            animation-name: scalefont;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+     
+     </style>
+</head>
+<body>
+    <span class="ani">animation</span>
+</body>
+</html>
