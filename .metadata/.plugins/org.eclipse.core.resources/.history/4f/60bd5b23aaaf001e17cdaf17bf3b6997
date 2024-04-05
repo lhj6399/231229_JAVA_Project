@@ -1,0 +1,28 @@
+package day06;
+
+public class String01 {
+
+	public static void main(String[] args) {
+		/* String 클래스 = 문자열을 다루기 위한 클래스 => 참조변수
+		 * String str = new String();
+		 * String str = "홍길동"; //일반 자료형처럼 이용 가능.
+		 * 
+		 */
+		
+		String str = "홍길동!!!";
+		System.out.println(str);
+		String str1 = new String();
+		str1 = "홍길순";
+		System.out.println(str1);
+		
+		//length : 전체 글자의 길이 (총 글자 수)
+		System.out.println("---length---");
+		System.out.println(str.length());
+		
+		//charAt(index) : index번지에 있는 문자열을 반환
+		System.out.println("--charAt(index)--");
+		System.out.println(str.charAt(1));
+		
+	}
+
+}

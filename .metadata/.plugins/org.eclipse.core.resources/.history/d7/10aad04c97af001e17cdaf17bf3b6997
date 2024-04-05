@@ -1,0 +1,29 @@
+package day06;
+
+import java.util.Scanner;
+
+public class ArrayEx01 {
+
+	public static void main(String[] args) {
+		/* 10개의 배열을 담을 수 있는 arr 생성
+		 * 1~10까지 값을 입력한 후 출력
+		 */
+		int arr [] = new int [10];
+		
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = i+1;
+			System.out.print(arr[i]+" ");
+		}
+		
+		//배열을 섞는 코드
+		//랜덤 번지를 선택해서 순차적으로 하나씩 교환
+		//(int)Math.random()*10)+0 //1부터 10개의 랜덤수 출력
+		//max = 최종 번지 개수, min = 첫 번지
+		int min = 0;
+		int max = arr.length;
+		
+		int random = (int)(Math.random()*max)+min;
+		System.out.println(random);
+ 	}
+
+}

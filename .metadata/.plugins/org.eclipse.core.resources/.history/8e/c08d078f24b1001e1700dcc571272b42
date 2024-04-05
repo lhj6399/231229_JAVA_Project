@@ -1,0 +1,24 @@
+package day08;
+
+public class Method05 {
+
+	public static void main(String[] args) {
+		/*
+		 * 
+		 */
+
+	}
+
+	/* 정수 하나가 주어지면 이 정수가 소수인지 아닌지 판별(true/false)
+	 * 
+	 */
+	
+	public static int a (int num1, int num2) {
+		for (int i = num1;	; i = num1+i) {
+			if( i % num1 == 0 && i % num2 == 0) {
+				return i; //메서드에서 return을 만나면 값을 반환하고 종료
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,30 @@
+package day05;
+
+import java.util.Scanner;
+
+public class Array02 {
+
+	public static void main(String[] args) {
+		/* 5명의 점수를 입력할 수 있는 배열을 생성
+		 * 5명의 점수를 입력받아서 배열에 저장
+		 * 점수를 출력
+		 */
+		
+		Scanner scan = new Scanner(System.in);
+		
+		
+		System.out.println("5명의 점수 입력: ");
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		int d = scan.nextInt();
+		int e = scan.nextInt();
+		
+		
+		
+		scan.close();
+		
+		
+	}
+
+}

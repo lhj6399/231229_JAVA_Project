@@ -1,0 +1,31 @@
+package day06;
+
+import java.util.Scanner;
+
+public class Array04 {
+
+	public static void main(String[] args) {
+		/* 10개의 값을 가지는 배열을 생성한 후
+		 * 1 ~ 50 랜덤수를 배열에 저장한 후 출력
+		 */
+
+		int arr[] = new int[10];
+		int random = 0;
+		int i = 0;
+		
+		
+		Scanner scan = new Scanner (System.in);
+		for(i=1; i<=10; i++) {
+		random = (int)(Math.random()*50); //1부터 50까지의 랜덤 수 생성
+		System.out.print(random+" ");
+		System.out.println(arr[i]);
+		}
+		
+		System.out.println();
+		
+		scan.close();
+		
+		
+	}
+
+}

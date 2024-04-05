@@ -1,0 +1,37 @@
+package day06;
+
+
+
+public class Array04 {
+
+	public static void main(String[] args) {
+		/* 10개의 값을 가지는 배열을 생성한 후
+		 * 1 ~ 50 랜덤수를 배열에 저장한 후 출력
+		 * 합계, 평균, 최대, 최소 출력
+		 */
+
+		int arr[] = new int[10];
+		int sum = 0;
+		double avg = 0;
+		int max = 0;
+		int min = 50; //상대가 작아야 하기 때문에 본인이 가장 큰 값.
+		
+		
+		for(int i=0; i<arr.length; i++) {
+			arr[i] = (int)(Math.random()*50); //1부터 50까지의 랜덤 수 생성
+			System.out.print(arr[i]+" ");
+		}
+		
+		
+
+		System.out.println();
+		System.out.println(sum);
+		System.out.println(avg);
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,44 @@
+package day06;
+
+public class ArrayCopy {
+
+	public static void main(String[] args) {
+		int arr[] = new int[] {1, 2, 3, 4}; //new를 통해서 객체를 생성
+		int arr1[] = arr;
+		int arr2[] = new int[5];
+		//두 객체의 주소를 확인
+		/*System.out.println(arr);
+		System.out.println(arr1);
+		System.out.println(arr2);
+		*/
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.print(arr[i]+" ");
+		}
+		
+		System.out.println();
+		
+		for(int i=0; i<arr1.length; i++) {
+			System.out.print(arr1[i]+" ");
+		}
+		
+		System.out.println();
+		
+		for(int i=0; i<arr2.length; i++) {
+			System.out.print(arr2[i]+" ");
+		}
+		
+		System.out.println();
+		
+		//arr의 값을 arr2로 복사
+		for(int i=0; i<arr.length; i++) {
+			arr2[i+1] = arr[i];
+		}
+		
+		for(int i=0; i<arr2.length; i++) {
+			System.out.print(arr2[i]+" ");
+		}
+		System.out.println();
+	}
+
+}

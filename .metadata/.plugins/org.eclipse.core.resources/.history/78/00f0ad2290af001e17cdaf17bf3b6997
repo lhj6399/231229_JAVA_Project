@@ -1,0 +1,14 @@
+package day06;
+
+public class ArrayCopy {
+
+	public static void main(String[] args) {
+		int arr[] = new int[] {1, 2, 3, 4}; //new를 통해서 객체를 생성
+		int arr1[] = arr;
+		//두 객체의 주소를 확인
+		System.out.println(arr);
+		System.out.println(arr1);
+
+	}
+
+}

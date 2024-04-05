@@ -1,0 +1,37 @@
+package day06;
+
+import java.util.Scanner;
+
+public class 과제 {
+
+	public static void main(String[] args) {
+		/* 숫자를 입력받아서 입력받은 숫자를 거꾸로 출력. 각 자리의 합계 출력
+		 * ex) 11456 => 65411 => 6+5+4+1+1 => 결과값 출력
+		 * ex) 19874 => 47891 => 4+7+8+9+1 => 결과값 출력
+		 */
+		
+		int arr[] = new int[5];
+		int i = 0;
+		int num = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		for(i=0; i<2 ;i++) {
+			num = scan.nextInt();
+			num += arr[i];
+			System.out.println(num);
+			for(int j=i+1; j<arr.length; j++) {
+				if(arr[i] > arr[j]) { // 오름차순 정렬
+					//교환
+					int tmp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = tmp;
+			
+		}
+		
+		scan.close();
+		
+			}
+
+		}	
+	}
+}

@@ -1,0 +1,22 @@
+package day08;
+
+public class Method04 {
+
+	public static void main(String[] args) {
+		/* 최대공약수, 최소공배수 리턴
+		 * 리턴을 받은 값을 메인에서 출력
+		 */
+		
+		
+	}
+
+	/* 두 정수를 매개변수로 받아, 최대공약수를 리턴하는 메서드
+	 * 
+	 */
+	
+	public static int a (int num1, int num2) {
+		
+	}
+	
+	/* 두 정수를 매개변수로 받아, 최소공배수를 리턴하는 메서드
+}

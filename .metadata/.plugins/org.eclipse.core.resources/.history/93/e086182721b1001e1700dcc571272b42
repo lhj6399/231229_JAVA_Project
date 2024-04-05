@@ -1,0 +1,62 @@
+package day08;
+
+import java.util.Scanner;
+
+public class Method04 {
+
+	public static void main(String[] args) {
+		/* 최대공약수, 최소공배수 리턴
+		 * 리턴을 받은 값을 메인에서 출력
+		 */
+		int gcd = 0;
+		
+		
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("두 정수 입력 : ");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		System.out.println(gcd);
+		
+		
+		
+		scan.close();
+	}
+
+	/*두 정수를 매개변수로 받아, 최대공약수를 리턴하는 메서드
+	 * 매개변수 : 두 정수 (int num1, int num2)
+	 * 리턴타입 : 최대공약수 (int)
+	 * 매서드명 gcd
+	 */
+	 
+	
+	public static int gcd (int num1, int num2) {
+		int result = 0;
+		for(int i=1; i<=num1; i++) {
+			if(num1 % i ==0 && num2 % i ==0) {
+				return result;
+			}
+		}
+		return result;
+	}
+	
+	 
+	/* 두 정수를 매개변수로 받아, 최소공배수를 리턴하는 메서드
+	 * 매개변수 : 두 정수 (int num1, int num2)
+	 * 리턴타입 : 최대공약수 (int)
+	 * 매서드명 gcd
+	 */
+	 
+	public static int a (int num1, int num2) {
+		int result = 0;
+		for (int i = num1; i <= 100; i = num1+i) {
+			if( i % num1 == 0 && i % num2 == 0) {
+				System.out.print(i+" ");
+				break;
+			}
+		}
+		return result;
+	}
+
+
+}

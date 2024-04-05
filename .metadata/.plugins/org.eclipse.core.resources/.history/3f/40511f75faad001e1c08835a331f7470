@@ -1,0 +1,12 @@
+package day04;
+
+public class Countinue01 {
+
+	public static void main(String[] args) {
+		/* continue : 계속 pass, skip 개념
+		 * 
+		 */
+
+	}
+
+}

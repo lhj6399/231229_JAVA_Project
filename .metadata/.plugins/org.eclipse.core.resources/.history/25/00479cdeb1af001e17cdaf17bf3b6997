@@ -1,0 +1,25 @@
+package day06;
+
+import java.util.Scanner;
+
+public class 과제 {
+
+	public static void main(String[] args) {
+		/* 숫자를 입력받아서 입력받은 숫자를 거꾸로 출력. 각 자리의 합계 출력
+		 * ex) 11456 => 65411 => 6+5+4+1+1 => 결과값 출력
+		 * ex) 19874 => 47891 => 4+7+8+9+1 => 결과값 출력
+		 */
+		int num1 = 0;
+		int num2 = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		num1 = scan.nextInt();
+		num2 = scan.nextInt();
+		
+		
+		scan.close();
+		
+	}
+
+}

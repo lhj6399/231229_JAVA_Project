@@ -1,0 +1,32 @@
+package day08;
+
+public class Method07 {
+
+	public static void main(String[] args) {
+		/* 로또 번호 생성
+		 * 
+		 */
+		int lotto[] = new int[7]; //당첨번호
+		int user[] = new int[6]; //사용자 로또 번호
+		randomArray(lotto);
+	}
+	/* 배열을 매개변수로 받아 1~45까지 랜덤수를 채워서 생성. 
+	 */
+	public static void randomArray(int arr[]) {
+		for(int i=0; i<arr.length; i++) {
+		arr[i] = (int)(Math.random()*45)+1;
+		
+			}
+			
+		}
+		
+	}
+	
+	/* 배열을 매개변수로 받아 배열을 출력하는 메서드
+	 */
+	
+	/* 중복 확인 메서드
+	 * 매개변수 : 배열, 값
+	 * 있으면 true, 없으면 false
+	 */
+}

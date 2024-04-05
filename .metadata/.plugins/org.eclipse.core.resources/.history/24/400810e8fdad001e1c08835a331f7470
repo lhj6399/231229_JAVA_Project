@@ -1,0 +1,30 @@
+package day04;
+
+import java.util.Scanner;
+
+public class DoWhile02 {
+
+	public static void main(String[] args) {
+		/* 메뉴 구성
+		 * do ~ while()문을 많이 사용함.
+		 * 
+		 * menu 1.저장하기 2.새로만들기 3.종료하기
+		 */
+		Scanner scan = new Scanner(System.in);
+		
+		int menu = 0;
+		do {
+			System.out.println("--menu--");
+			System.out.println("1.저장하기 | 2.새로만들기 | 3.종료하기");
+			System.out.println(">> menu > ");
+		}while();
+		
+		
+		
+		
+		
+		scan.close();
+
+	}
+
+}

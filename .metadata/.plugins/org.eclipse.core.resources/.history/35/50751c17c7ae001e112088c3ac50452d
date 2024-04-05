@@ -1,0 +1,51 @@
+package day05;
+
+import java.util.Scanner;
+
+public class ForEx1 {
+
+	public static void main(String[] args) {
+		/* 소수 : 약수가 1과 자기 자신만의 수를 가지는 수를 소수라고 한다.
+		 * 		3, 5, 7, 11, 13, 17, 19 ...
+		 * 소수의 약수 (1, 나 자신) => 약수의 개수가 2개다.
+		 * 
+		 * 숫자 하나를 입력 받아서 해당 수가 소수인지 아닌지 판별
+		 * 
+		 * ex) 
+		 * num = 13
+		 * 소수입니다.
+		 * num = 12
+		 * 소수가 아닙니다.
+		 */
+		
+				
+		Scanner scan = new Scanner(System.in);
+		System.out.println("숫자(정수)를 입력해주세요.");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		int count = 0;
+				
+		System.out.println(num1+"의 약수는 : ");
+		for(int i=1; i<=num1; i++) { //약수의 개수를 세기 위해서 돌림.
+			if(num1 % i == 0) {
+				System.out.print(i+" ");
+				count++;
+			}
+		}
+		System.out.println();
+		if (count == 2) {
+			System.out.println(num1 + "은 소수입니다.");
+		} else if (count != 2 ) {
+			System.out.println(num1 + "은 소수가 아닙니다.");
+		}
+		
+		// 2 ~ 100까지의 소수를 모두 출력
+
+		
+		
+		
+		scan.close();
+		
+	}
+
+}

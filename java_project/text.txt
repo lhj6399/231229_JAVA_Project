@@ -1,0 +1,5 @@
+-- 단어장 --
+banana : 바나나
+orange : 오렌지
+apple : 사과
+kiwi : 키위

@@ -1,0 +1,27 @@
+package day07;
+
+public class Method02 {
+
+	public static void main(String[] args) {
+		// + - * / % 매서드를 생성
+		// main에서 허츨하여 확인
+		
+		int hap = sum(10,20);
+		System.out.println(hap);
+
+	}
+
+	// 매서드 선언 위치
+	// 두 정수의 합을 알려주는 메서드 sum
+	// 두 정수의 차를 알려주는 메서드 sub
+	// 두 정수의 곱을 알려주는 메서드 mul
+	// 두 정수의 몫을 알려주는 메서드 div
+	// 두 정수의 나머지를 알려주는 메서드 mod
+	
+	public static int sum(int num1, int num2) {
+		System.out.println(num1+num2);
+	}
+	
+	
+	
+}

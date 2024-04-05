@@ -1,0 +1,41 @@
+package day07;
+
+import java.util.Scanner;
+
+public class StringEx02 {
+
+	public static void main(String[] args) {
+		/* 5개의 파일명이 주어졌을 떄,
+		 * 검색어를 입력하면 해당 단어를 포함하는 파일을 출력
+		 * 
+		 */
+
+		String [] fileName = {"이것이자바다.java", "java의정석.java", "String.jpg", "String 메서드.txt", "array.txt"};
+		
+		//ex : java => 이것이자바다.java, java의 정석.java 출력
+		//	   String => String.jpg, String 메서드.txt
+		//	   txt => String 메서드.txt, array.txt
+		//     스트링 => 검색 결과가 없습니다.
+		
+		Scanner scan = new Scanner (System.in);
+		
+		
+		for (int i=1;i<=5;i++) {
+			System.out.println("검색어를 입력하세요. ");
+		String file = scan.next();
+		if(file.contains("java")) {
+			System.out.println("이것이자바다.java, java의 정석.java");
+		} else if (file.contains("String")) {
+			System.out.println("String.jpg, String 메서드.txt");
+		} else if (file.contains("txt")) {
+			System.out.println("String 메서드.txt, array.txt");
+		} else {
+			System.out.println("검색 결과가 없습니다.");
+		}
+		}
+		
+		scan.close();
+		
+	}
+
+}

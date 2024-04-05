@@ -1,0 +1,49 @@
+package day08;
+
+public class Method05 {
+
+	public static void main(String[] args) {
+		/*
+		 * 
+		 */
+
+		boolean a = isPrime(5);
+		System.out.println(a);
+		System.out.println(isPrime(5));
+		
+		// 2부터 100까지의 소수를 출력하고 소수의 합계를 출력 
+		int sum = 0;
+		System.out.println("2부터 100까지의 소수");
+		for(int i=2; i<=100; i++) {
+			if(isPrime(i)) {
+				System.out.print(i+" ");
+				sum+=i;
+			}
+		}
+		System.out.println();
+		System.out.println("소수의 합계 : "+sum);
+	}
+
+	/* 정수 하나가 주어지면 이 정수가 소수인지 아닌지 판별(true/false)
+	 * 리턴타입 : boolean
+	 * 매개변수 : int num
+	 * 메서드명 : isPrime
+	 */
+	
+	public static boolean isPrime (int num) {
+		int count = 0; // 약수가 2개인지 세기 위한 count
+		
+			for (int j=1; j<=num; j++) {
+				if (num % j == 0) {
+					count++;
+				}
+			}
+			if(count == 2) {
+				return true;
+			} else{
+				return false;
+			}
+		}
+
+	
+}

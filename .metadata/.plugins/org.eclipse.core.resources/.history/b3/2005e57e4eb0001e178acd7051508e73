@@ -1,0 +1,14 @@
+package day07;
+
+public class String02 {
+
+	public static void main(String[] args) {
+		//String method
+		
+		//trim : 불필요한 공백을 제거
+		System.out.println("--trim--");
+		System.out.println("   hello   ".trim());
+
+	}
+
+}
